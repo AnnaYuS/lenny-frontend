@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('lennyApp')
-  .constant("baseURL", "http://localhost:8081/")
+  .constant("baseURL", "https://lenny-learny.herokuapp.com/")
   .factory('pathFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
 
   return $resource(baseURL + "paths/:id", {id:'@id'}, {
