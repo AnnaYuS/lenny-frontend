@@ -4,7 +4,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "gulp serve"
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
@@ -54,3 +55,4 @@
     "ng-masonry": "^1.0.3"
   }
 }
+

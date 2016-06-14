@@ -88,15 +88,15 @@ gulp.task('connect', ['styles'], function() {
     .use(serveIndex('app'));
 
   require('http').createServer(app)
-    .listen(9000)
+    .listen( process.env.PORT || 9000)
     .on('listening', function() {
-      console.log('Started connect web server on http://localhost:9000');
+      console.log('Started connect web server on http://localhost:'+  (process.env.PORT || 9000));
     });
 });
 
 gulp.task('serve', ['wiredep', 'connect', 'watch'], function() {
   if (argv.open) {
-    require('opn')('http://localhost:9000');
+    require('opn')('http://localhost:' +  (process.env.PORT || 9000));
   }
 });
 
@@ -160,3 +160,5 @@ gulp.task('docs', [], function() {
     .pipe($.ngdocs.process())
     .pipe(gulp.dest('./docs'));
 });
+
+
