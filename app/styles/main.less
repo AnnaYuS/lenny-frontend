@@ -1,0 +1,94 @@
+// bower:less
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+// endbower
+
+@icon-font-path: '../bower_components/bootstrap/fonts/';
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+  .navbar
+  {
+    max-width:300px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header
+  {float:none !important;}
+
+
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+
+//custom color variables
+
+@brand-green: #00DDBD;
+@brand-light-green: #F0FCFA;
+@brand-primary: @brand-green;
+
+
+.logo {
+  height: auto;
+}
+
+.navbar-custom {
+  background-color: @brand-light-green;
+  border: none;
+}
+
+.content, footer {
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+
+.nav-list-custom {
+  margin-left: 25px;
+}
+
+.jumbotron {
+  .list-unstyled {
+    font-size: 21px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  img {
+    padding-top: 40px;
+  }
+}
+
+
+

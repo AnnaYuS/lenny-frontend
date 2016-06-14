@@ -1,0 +1,34 @@
+<h1>Create learning path</h1>
+<br>
+<form  name="AddPath" ng-submit="save()" >
+
+<h3>Select category</h3>
+<ui-select  ng-model="selectedCategories.value" theme="bootstrap" ng-disabled="false"  close-on-select="true" style="width: 800px;">
+
+    <ui-select-match placeholder="Select category...">{{$select.selected.name}}</ui-select-match>
+    <ui-select-choices repeat="category in categories | propsFilter: {name: $select.search}">
+        <div ng-bind-html="category.name | highlight: $select.search"></div>
+
+    </ui-select-choices>
+</ui-select>
+
+    <br>
+    <br>
+    <div class="form-group" ng-class="{'has-error': AddPath.name.$invalid}">
+        <label for="Name" class="sr-only">Path name</label>
+        <input type="text" class="form-control" name="name"
+               id="Name" placeholder="Name, e.g. Node.js "  ng-model="path.name" required>
+        <span class="help-block" ng-show="AddPath.name.$error.required && !AddPath.name.$pristine"></span>
+    </div>
+
+
+    <div class="form-group" ng-class="{'has-error': AddPath.description.$invalid}">
+        <label for="Description" class="sr-only">Description</label>
+        <textarea class="form-control" id="Description" name="description"
+                  placeholder="Type short description of the learning path"
+                  ng-model="path.description" required></textarea>
+    </div>
+
+    <input type="submit" class="btn btn-primary"  ng-disabled="AddPath.$invalid" value="Create" >
+
+</form>

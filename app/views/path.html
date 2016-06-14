@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <h1>{{path.name}}</h1>
+    <p>{{path.description}}</p>
+    <br>
+
+    <div class="row well">
+        <div class="col-md-2">
+            <h6>Rating</h6>
+            <h6>Comments</h6>
+            <h6>Author</h6>
+            <h6>Admin</h6>
+            <h6>Peers</h6>
+            <h6>Categories</h6>
+
+        </div>
+        <div class="col-md-10">
+            <p>{{path.rating}}</p>
+            <p>{{comments.length}}</p>
+            <p>{{path.author}}</p>
+            <p>{{path.admin}}</p>
+            <p>{{participants.length}}</p>
+            <p><span ng-repeat="category in path.categories">{{category.name}}{{$last ? '' : ', '}}</span></p>
+        </div>
+    </div>
+    <br>
+    <p><button class="btn btn-primary">Enroll</button></p>
+ <br>
+
+        <div ng-repeat="step in path.steps">
+            <h2>{{step.name}}</h2>
+           <p>{{step.description}}</p>
+        </div>
+<br>
+    <h3>Comments <span>({{path.comments.length}})</span></h3>
+    <div ng-repeat="comment in path.comments">
+        <p>{{comment.text}}</p>
+    </div>
+
+<br>
+    <br>
+    <h3>Leave a comment</h3>
+    <br>
+    <form>
+
+        <div class="form-group">
+            <label for="Comment" class="sr-only">Leave a comment</label>
+            <textarea class="form-control" rows="3" id="Comment" placeholder="Type your comment"></textarea>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="Email">Your email</label>
+            <input type="email" class="form-control" id="Email" placeholder="Type your email">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Name">Your name</label>
+            <input type="text" class="form-control" id="Name" placeholder="Type your name">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary text-right">Post</button>
+
+        </form>
+
+
+</div>
