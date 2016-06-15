@@ -6,7 +6,7 @@
   "scripts": {
     "test": "gulp test",
     "start": "node app.js",
-    "postinstall": "bower install"
+    "postinstall": "bower install && gulp build"
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
