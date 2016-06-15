@@ -7,11 +7,12 @@
     "test": "gulp test",
     "build": "gulp",
     "start": "node app.js",
-    "postinstall": "bower install && gulp serve"
+    "postinstall": "bower install"
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
     "bower": "^1.7.9",
+    "bootstrap":"3.3.6",
     "chai": "^2.1.0",
     "connect": "^3.3.4",
     "connect-livereload": "^0.5.3",
@@ -56,6 +57,7 @@
     "angular-resource": "^1.5.6",
     "angular-ui-router": "^0.3.1",
     "apache-server-configs": "^2.11.0",
+    "bootstrap":"3.3.6",
     "bower": "^1.7.9",
     "chai": "^2.1.0",
     "connect": "^3.3.4",
