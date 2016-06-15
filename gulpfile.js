@@ -1,4 +1,4 @@
-/* jshint node:true */
+
 'use strict';
 
 var gulp = require('gulp');
@@ -15,12 +15,12 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('.tmp/styles'));
 });
 
-gulp.task('jshint', function() {
-  return gulp.src('app/scripts/**/*.js')
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.jshint.reporter('fail'));
-});
+//gulp.task('jshint', function() {
+//  return gulp.src('app/scripts/**/*.js')
+//    .pipe($.jshint())
+//    .pipe($.jshint.reporter('jshint-stylish'))
+//    .pipe($.jshint.reporter('fail'));
+//});
 
 gulp.task('jscs', function() {
   return gulp.src('app/scripts/**/*.js')
