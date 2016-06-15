@@ -7,9 +7,9 @@
     "test": "gulp test",
     "build": "gulp",
     "start": "node app.js",
-    "postinstall": "bower install && gulp"
+    "postinstall": "bower install && gulp build"
   },
-  "devDependencies": {
+    "devDependencies": {
     "apache-server-configs": "^2.11.0",
     "bower": "^1.7.9",
     "bootstrap":"3.3.6",
