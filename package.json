@@ -7,7 +7,7 @@
     "test": "gulp test",
 
     "start": "node app.js",
-    "postinstall": "bower install && gulp styles && gulp html && gulp wiredep"
+    "postinstall": "bower install && gulp styles && gulp wiredep"
   },
     "devDependencies": {
     "apache-server-configs": "^2.11.0",
