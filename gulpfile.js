@@ -161,4 +161,8 @@ gulp.task('docs', [], function() {
     .pipe(gulp.dest('./docs'));
 });
 
+gulp.task('heroku:production',['clean'], function() {
+  gulp.start('builddist');
+});
+
 

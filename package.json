@@ -7,7 +7,7 @@
     "test": "gulp test",
 
     "start": "node app.js",
-    "postinstall": "bower install"
+    "postinstall": "gulp heroku:production"
   },
     "devDependencies": {
     "apache-server-configs": "^2.11.0",
