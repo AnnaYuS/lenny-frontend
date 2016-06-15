@@ -143,7 +143,7 @@ gulp.task('wiredep', function() {
 //  gulp.watch('bower.json', ['wiredep']);
 //});
 
-gulp.task('builddist', ['jshint', 'jscs', 'html', 'images', 'fonts', 'extras'],
+gulp.task('builddist', ['jscs', 'html', 'images', 'fonts', 'extras'],
   function() {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
