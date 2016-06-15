@@ -5,6 +5,7 @@
   },
   "scripts": {
     "test": "gulp test",
+    "build": "gulp",
     "start": "node app.js",
     "postinstall": "bower install"
   },
