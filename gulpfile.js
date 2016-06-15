@@ -150,7 +150,7 @@ gulp.task('builddist', ['jscs', 'html', 'images', 'fonts', 'extras'],
 //gulp.task('heroku:production',['wiredep'], function() {
 //  gulp.start('builddist');
 //});
-gulp.task('heroku:production', ['clean'], function() {
+gulp.task('build', ['clean'], function() {
   gulp.start('builddist');
 });
 
