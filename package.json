@@ -6,7 +6,7 @@
   "scripts": {
     "test": "gulp test",
     "start": "node app.js",
-    "postinstall": "bower install"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
@@ -53,7 +53,7 @@
   "dependencies": {
     "angular-resource": "^1.5.6",
     "angular-ui-router": "^0.3.1",
-    "ng-masonry": "^1.0.3",
+
     "npm": "^1.x",
     "apache-server-configs": "^2.11.0",
     "chai": "^2.1.0",
